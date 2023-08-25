@@ -18,11 +18,11 @@ function setup() {
 
   engine = Engine.create();
   world = engine.world;
-  var groundoption={
+  var option={
     isStatic:true
   };
-  ground=Bodies.rectangle(100,300,400,20,groundoption);
-  World.add(world,groundoption);
+  ground=Bodies.rectangle(100,300,400,20,option);
+  World.add(world,ground);
   //box1 = new Box(200,100,50,50);
   
 
@@ -33,7 +33,7 @@ function mousePressed(){
   boxes.push(
     
     
-    new Box(20,20,mouseX,mouseY)
+    new Box(0.5,0.5,mouseX,mouseY)
     
     
     )
@@ -49,5 +49,4 @@ function draw()
   
   
 }
-
 
